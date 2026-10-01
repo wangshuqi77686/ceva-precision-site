@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="湖州赛瓦科技——数字化口腔 CAD/CAM 设备与桌面级智能 CNC 研发制造。">
+  <title>赛瓦科技 CEVA｜让数字制造更近一步</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="importmap">{"imports":{"three":"./assets/vendor/three.module.js","three/addons/":"./assets/vendor/addons/"}}</script>
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="nav-wrap">
+    <a class="brand" href="#top" aria-label="赛瓦科技首页">
+      <span class="brand-mark">CEVA</span><span class="brand-cn">赛瓦</span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#products">产品</a><a href="#technology">技术</a><a href="#vision">未来产品</a><a href="#about">关于</a>
+    </nav>
+    <a class="nav-cta" href="#contact">联系咨询</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> DIGITAL DENTISTRY · INTELLIGENT CNC</p>
+        <h1>精密制造，<br><em>就在身边。</em></h1>
+        <p class="lead">从数字化口腔 CAD/CAM 设备，到面向未来的桌面级智能 CNC，赛瓦专注于让高精度加工更稳定、更高效、更易用。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#model-lab">探索 3D 产品 <span>↗</span></a>
+          <a class="btn ghost" href="#products">查看产品矩阵</a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>60,000</strong><span>rpm 最高主轴转速</span></div>
+          <div><strong>15</strong><span>料盘自动换盘</span></div>
+          <div><strong>24h</strong><span>连续加工能力</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="model-lab">
+        <canvas id="product-canvas" aria-label="CI5PLUS 三维交互模型"></canvas>
+        <img class="model-fallback" src="assets/model/ci5plus-render.png" alt="CI5PLUS 五轴义齿切削机展示模型">
+        <div class="model-loading"><i></i><span>正在载入产品模型</span></div>
+        <div class="model-badge"><b>CI5PLUS</b><span>五轴自动换盘干切设备</span></div>
+        <div class="hotspot hs-screen"><span>01</span><b>12.1″ 触控界面</b></div>
+        <div class="hotspot hs-pallet"><span>02</span><b>15 料盘自动切换</b></div>
+        <div class="model-toolbar" aria-label="模型控制">
+          <button data-view="front">正视</button>
+          <button data-view="detail">加工舱</button>
+          <button data-view="feeder">料仓</button>
+          <button data-view="explode">拆解</button>
+          <button data-view="reset" class="active">复位</button>
+        </div>
+        <div class="drag-tip">拖动旋转 · 滚轮缩放</div>
+      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
+    </section>
+
+    <section class="marquee" aria-label="核心能力">
+      <div>五轴联动 <i>✦</i> 自动换刀 <i>✦</i> 开放式 CAM <i>✦</i> 物联网选配 <i>✦</i> 多材料加工 <i>✦</i> 五轴联动 <i>✦</i></div>
+    </section>
+
+    <section class="section products" id="products">
+      <header class="section-head reveal">
+        <div><p class="kicker">PRODUCT MATRIX</p><h2>一套数字化加工体系，<br>覆盖不同生产节奏。</h2></div>
+        <p>从紧凑型干切，到干湿两用，再到无人化自动换盘。参数均依据用户提供的 2024 产品宣传册整理。</p>
+      </header>
+      <div class="product-tabs reveal" role="tablist">
+        <button class="active" data-product="ci5">CI5 <span>干切</span></button>
+        <button data-product="ci5w">CI5W <span>干湿两用</span></button>
+        <button data-product="ci5plus">CI5PLUS <span>自动换盘</span></button>
+      </div>
+      <article class="product-stage reveal">
+        <div class="product-image"><img src="assets/images/ci5-family.png" alt="赛瓦 CI5、CI5W 与 CI5PLUS 产品系列"></div>
+        <div class="product-detail">
+          <p class="product-index">01 / 03</p>
+          <h3 id="product-name">CI5</h3>
+          <p id="product-desc">五轴干式义齿切削设备，以航空铝材机身、全伺服驱动与开放式 CAM 工作流，面向稳定、高效的日常加工。</p>
+          <dl id="product-specs">
+            <div><dt>加工精度</dt><dd>0.01 mm</dd></div><div><dt>主轴转速</dt><dd>0–60,000 rpm</dd></div>
+            <div><dt>刀库容量</dt><dd>9 把</dd></div><div><dt>设备尺寸</dt><dd>520 × 645 × 820 mm</dd></div>
+          </dl>
+          <a href="#contact" class="text-link">获取产品资料 <span>→</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section technology" id="technology">
+      <div class="tech-copy reveal">
+        <p class="kicker">DIGITAL WORKFLOW</p>
+        <h2>从口扫数据，<br>到椅旁修复。</h2>
+        <p>以开放式排版 CAM 串联数字化工作流，支持多类义齿修复体和材料加工，让设备、工艺与生产管理在同一链路协同。</p>
+        <div class="tech-note"><span>适用材料</span><b>氧化锆 · PMMA · PEEK · 玻璃陶瓷 · 钛材*</b><small>*不同材料能力随具体机型变化</small></div>
+      </div>
+      <div class="workflow reveal">
+        <div class="flow-line"></div>
+        <article><span>01</span><i>◉</i><div><b>口内扫描</b><small>Intraoral Scanning</small></div></article>
+        <article><span>02</span><i>◇</i><div><b>排版设计</b><small>CAD / CAM Design</small></div></article>
+        <article><span>03</span><i>⌁</i><div><b>精密切削</b><small>5-Axis Milling</small></div></article>
+        <article><span>04</span><i>△</i><div><b>结晶烧结</b><small>Finishing</small></div></article>
+        <article><span>05</span><i>✓</i><div><b>椅旁修复</b><small>Reconstruction</small></div></article>
+      </div>
+    </section>
+
+    <section class="vision" id="vision">
+      <div class="vision-image reveal"><img src="assets/images/desktop-cnc-concept.jpg" alt="桌面级智能 CNC 概念产品图"><span>概念产品 · 产品化阶段</span></div>
+      <div class="vision-copy reveal">
+        <p class="kicker">NEXT: DESKTOP CNC</p>
+        <h2>把工业级能力，<br>装进桌面尺度。</h2>
+        <p>面向创客、实验室与小微制造场景的桌面级智能 CNC 正处于产品化阶段。规划集成自动换刀、RFID 刀具管理、3D 探针与 AI-CAM 辅助能力。</p>
+        <div class="targets">
+          <div><small>目标体积</small><b>&lt; 0.5 m³</b></div>
+          <div><small>目标重量</small><b>&lt; 50 kg</b></div>
+          <div><small>目标精度</small><b>± 0.01 mm</b></div>
+          <div><small>规划主轴</small><b>18,000 rpm</b></div>
+        </div>
+        <p class="disclaimer">以上为现阶段研发目标与概念展示，不构成已量产产品参数承诺。</p>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <header class="section-head reveal">
+        <div><p class="kicker">ABOUT CEVA</p><h2>让专业制造设备，<br>成为可用的生产力。</h2></div>
+        <p>湖州赛瓦科技有限公司聚焦数字化口腔设备与桌面级智能 CNC 的软硬件研发、生产与全球销售。</p>
+      </header>
+      <div class="about-grid reveal">
+        <article class="about-main"><span>CEVA / 赛瓦</span><h3>研发驱动<br>软硬件协同</h3><p>围绕机械结构、运动控制、CAM 工作流与联网管理持续迭代，把复杂加工能力封装为直观、稳定的产品体验。</p></article>
+        <article><b>01</b><h3>精密机械</h3><p>航空铝材床身、研磨级丝杆与全伺服驱动。</p></article>
+        <article><b>02</b><h3>开放生态</h3><p>开放式 CAM 工作流，适配多种材料与修复体。</p></article>
+        <article><b>03</b><h3>智能生产</h3><p>自动换刀、自动换盘与物联网功能协同。</p></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-copy reveal"><p class="kicker">LET'S BUILD PRECISELY</p><h2>下一台设备，<br>从一次对话开始。</h2></div>
+      <div class="contact-card reveal">
+        <p>产品咨询 / 技术支持 / 合作洽谈</p>
+        <a class="phone" href="tel:13068746612">130 6874 6612 <span>↗</span></a>
+        <address>浙江省湖州市安吉县天子湖镇<br>天衡联创产业园 4 号厂房 3 楼</address>
+      </div>
+    </section>
+  </main>
+  <footer><span>© 2026 HUZHOU CEVA TECHNOLOGY CO., LTD.</span><span>产品信息以最终技术文件与合同为准</span></footer>
+  <script type="module" src="assets/site.js"></script>
+</body>
+</html>
